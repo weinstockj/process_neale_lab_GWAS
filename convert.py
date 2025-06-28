@@ -565,8 +565,8 @@ def reformat_gwas(
 
     # CONCATENATE FIXED DATAFRAMES:
     for col_name, col_type in zip(standard_col_names, standard_col_dtypes):
-        print(f"Column: {col_name}, Target Type: {col_type}")
-        print(neale_df[col_name].head(5))
+        # print(f"Column: {col_name}, Target Type: {col_type}")
+        # print(neale_df[col_name].head(5))
         neale_df = neale_df.with_columns(neale_df[col_name].cast(col_type))
         rsid_df = rsid_df.with_columns(rsid_df[col_name].cast(col_type))
         rsid_null_df = rsid_null_df.with_columns(rsid_null_df[col_name].cast(col_type))

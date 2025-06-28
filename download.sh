@@ -12,15 +12,14 @@ Download GWAS data for a specific phenotype from the Neale lab UK Biobank datase
 Only downloads both_sexes and irnt normalized files.
 
 Options:
-  --phenotype       Phenotype description (e.g., "Calcium", "Food weight")
+  --phenotype       Phenotype description (e.g., "Calcium (quantile)") 
   --phenotype_code  Phenotype code (e.g., 100024_irnt, 100001_irnt)
   --output          Output directory name (will be created if it doesn't exist)
   --help            Show this help message
 
 Examples:
-  $0 --phenotype "Calcium" --output calcium
-  $0 --phenotype_code 100024_irnt --output calcium
-  $0 --phenotype "Food weight" --output food_weight
+  $0 --phenotype "Calcium (quantile)" --output calcium
+  $0 --phenotype_code 30680_irnt --output calcium
 EOF
 }
 
